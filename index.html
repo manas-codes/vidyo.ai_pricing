@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Public+Sans:wght@100;200;300;400;600;700&family=Roboto+Mono:wght@500&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f7dc5e7dcb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+  <div class="header">
+    <img src="assets/Logo.png" alt="Logo">
+
+  </div>
+  <div class="heading-txt">
+  <div class="text-align-center">
+    <div>
+        <div class="margin-bottom margin-small">
+    <h1 class="top-heading">Save 10x time &amp; effort with us</h1>
+</div>
+</div>
+  <p class="text-garlic-700">Pay only for upload minutes. Download unlimited videos.</p></div>
+</div>
+<div class="btn-container">
+<div class="switch-wrapper">
+    <input id="monthly" type="radio" name="switch" >
+    <input id="yearly" type="radio" name="switch" checked>
+    <label for="monthly">Monthly</label>
+    <label for="yearly">Yearly <span class ="offer">Upto 51% Off </span></label>
+    <span class="highlighter"></span>
+  </div>
+</div>
+<div class="mid-container">
+<div class="slider-container">
+    <div class="slider-txt">
+        <h2>Suggesting an ideal plan for producing around <span id="sliderValue" class="chips">125 </span><span class="chips">Clips</span> monthly</h2>
+    </div>
+    
+    <div class="slider">
+        <div class="custom-rangeslider">
+            <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="50" max="200" value="125" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+            <span class="custom-rangeslider__tooltip">125</span>
+            <span class="custom-rangeslider__label">
+              <span class="custom-rangeslider__label-min">50</span>
+              <span class="custom-rangeslider__label-max">200+</span>
+            </span>
+          </div>
+          </div>
+          
+      
+</div>
+<div class="cards-container">
+<div class="packages">
+    <h3 class="first">Free</h3>
+    <h1 class="text1">USD 0<span class="month">/month</span></h1>
+    <h1 class="text2">USD 0 <span class="month">/month</span></h1>
+    <br>
+    
+    <button class="button">Start for Free </button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <ul class="list">
+      <li>&#10003; 75 mins per month</li>
+      <li>&#10003; 
+        720p render quality</li>
+      <li>&#10003; Pop-up Forms</li>
+      <li>&#10003; Direct TikTok publishing</li>
+    </ul>
+    
+  </div>
+  <div class="packages">
+    <h3 class="first">Essential</h3>
+    <h1 class="text1">USD 42 <span class="month">/month</span></h1>
+    <h1 class="text2">USD 22 <span class="month">/month</span></h1>
+    <br>
+    
+    <button class="button">Choose this plan &rarr;</button>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <ul class="list">
+<li>&#10003; Everything in Free plan</li>
+      <li>&#10003; 300 mins per month/li>
+      <li>&#10003; 1080p render quality</li>
+      <li>&#10003; ⚡Intelliclips, short videos & chapters</li>
+      <li>&#10003; Directly publish or schedule to 6 social platforms</li>
+      <li>&#10003; 180 day data retention</li>
+    </ul>
+    
+  </div>
+  <div class="packages growth-card black-theme">
+    <h3 class="first">Growth</h3>
+    <h1 class="text1">USD 68 <span class="month">/month</span></h1>
+    <h1 class="text2">USD 38 <span class="month">/month</span></h1>
+    <br>
+   
+    <button class="button">Choose this plan &rarr;</button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <ul class="list">
+
+
+      <li>&#10003; Everything in Essential plan</li>
+      <li>&#10003; 
+        600 mins per month</li>
+      <li>&#10003; 1080p render quality</li>
+      <li>&#10003; ⚡Custom Brand Kit & templates</li>
+      <li>&#10003; ⚡Metadata for all social platforms</li>
+      <li>&#10003; ⚡Viddy AI content assistant</li>
+      <li>&#10003; ⚡Social media analytics (coming soon)</li>
+    </ul>
+    
+  </div>
+  <div class="packages custom-card">
+    <h3 class="first">Custom</h3>
+    <h1 class="text1">USD 80 <span class="month">/month</span></h1>
+    <h1 class="text2">USD 100 <span class="month">/month</span></h1>
+    <br>
+    
+    <button class="button">Choose this plan &rarr;</button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <select id="minutes-dropdown">
+        <option value="70">70 mins</option>
+        <option value="120">120 mins</option>
+        <option value="230">230 mins</option>
+    </select>
+    <ul class="list">
+      <li>&#10003; Everything in Growth plan</li>
+      <li>&#10003; 900-1800 mins per month</li>
+    </ul>
+    
+  </div>
+</div>
+
+</div>
+<div class="toggle-btn-contatiner">
+    <div class="toggle-btn">
+        <button class="toggle"  onclick="toggle()"> View all features <div class="square toggle-up" onclick="toggle()">&#9650;</div>  </button>
+    </div>
+    <div class="hidden">
+    <div class="feature-header">
+        <h2>Core</h2>
+        <div id="dropdown-button" class="dropdown">
+            <button class="dropbtn" onclick="toggle()"> View<div class="square toggle-up" onclick="toggle()">&#9650;</div></button>
+          
+        </div>
+      </div>
+      
+      <table id="toggle-table" class="table-hidden">
+        <tr class="static-hading">
+          <td>Feature</td>
+          <td>Free</td>
+          <td>Essential</td>
+          <td>Growth / Custom</td>
+          <td>Expert Coming soon</td>
+        </tr>
+    
+        <tr>
+          <td>Minutes per month</td>
+          <td>75 mins</td>
+          <td>300 mins</td>
+          <td>600 - 1800 mins</td>
+          <td>600 - 1800 mins</td>
+        </tr>
+        <tr>
+          <td>Render Quality</td>
+          <td>720p</td>
+          <td>1080p</td>
+          <td>1080p</td>
+          <td>4K</td>
+        </tr>
+       
+      </table>
+      <div class="feature-header">
+        <h2>Brand</h2>
+        <div  class="dropdown">
+          <button class="dropbtn" onclick="toggle()">View<div class="square toggle-up" onclick="toggle()">&#9650;</div></button>
+          
+        </div>
+      </div>
+      
+      <table id="toggle-table" class="table-hidden">
+        <tr class="static-hading">
+          <td>Feature</td>
+          <td>Free</td>
+          <td>Essential</td>
+          <td>Growth / Custom</td>
+          <td>Expert Coming soon</td>
+        </tr>
+    
+        <tr>
+          <td>Minutes per month</td>
+          <td>75 mins</td>
+          <td>300 mins</td>
+          <td>600 - 1800 mins</td>
+          <td>600 - 1800 mins</td>
+        </tr>
+        <tr>
+          <td>Render Quality</td>
+          <td>720p</td>
+          <td>1080p</td>
+          <td>1080p</td>
+          <td>4K</td>
+        </tr>
+       
+      </table>
+      <div class="feature-header">
+        <h2>Meta Data</h2>
+        <div id="dropdown-button" class="dropdown">
+            <button class="dropbtn" onclick="toggle()">View<div class="square toggle-up" onclick="toggle()">&#9650;</div></button>
+          
+        </div>
+      </div>
+      
+      <table id="toggle-table" class="table-hidden">
+        <tr class="static-hading">
+          <td>Feature</td>
+          <td>Free</td>
+          <td>Essential</td>
+          <td>Growth / Custom</td>
+          <td>Expert Coming soon</td>
+        </tr>
+    
+        <tr>
+          <td>Minutes per month</td>
+          <td>75 mins</td>
+          <td>300 mins</td>
+          <td>600 - 1800 mins</td>
+          <td>600 - 1800 mins</td>
+        </tr>
+        <tr>
+          <td>Render Quality</td>
+          <td>720p</td>
+          <td>1080p</td>
+          <td>1080p</td>
+          <td>4K</td>
+        </tr>
+     
+      </table>
+      </div>
+</div>
+
+
+</div>
+</div>
+<footer class="footer">
+    <a href="https://www.linkedin.com/in/manas-sohgaura-483b991aa"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/manas-codes"><i class="fab fa-github"></i></a>
+    <a href="mailto: manassohgaura@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+<div class="footnote">    
+<p>Created with ❤️ by Manas</p>
+</footer>
+<script src="index.js"></script>
+
+</body>
+
+</html>
